@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {color:red;}
+        p {color:blue;}
+      </style>
+{% if page.title %}
+<title>{{page.title}}</title>
+{% endif %}
+</head>
+<body>
+
+{% if page.h1 %}
+<h1>{{ page.h1 }}</h1>
+{% endif %}
+<h2> this is default h2</h2>
+{% if site.data.test.name %}
+<p>{{site.data.test.name}}</p>
+{% endif %}
+
+</body>
+</html>
